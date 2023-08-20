@@ -18,14 +18,14 @@ export default function TagLinks({
   param: string;
 }) {
   return (
-    <div className="flex space-x-2 text-sm">
+    <div className="flex flex-wrap text-sm">
       {toTagSet(writingArr).map((el: string) => (
         <Link
           href={`${path}?tag=${encodeURIComponent(el)}${
             param ? `&${param}` : ''
           }`}
           key={el}
-          className={`${pick !== el && 'opacity-50'}`}>
+          className={`${pick !== el && 'opacity-50'} mr-2 mt-[1px]`}>
           {el}
         </Link>
       ))}
