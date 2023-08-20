@@ -6,6 +6,7 @@ const store: store[] = [
   {
     title:
       '작은 것들을 위한 시 (Boy With Luv) BTS lyrics/letra Traducción al español',
+    category: 'music',
     img: 'https://upload.wikimedia.org/wikipedia/ko/thumb/e/ee/%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8_-_MAP_OF_THE_SOUL_-_PERSONA.png/220px-%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8_-_MAP_OF_THE_SOUL_-_PERSONA.png',
     writing: (
       <>
@@ -23,21 +24,10 @@ const store: store[] = [
           allowFullScreen></iframe>
       </>
     ),
-    description: 'description',
+    description:
+      'Las letras de "Boy With Luv" para las canciones pequeñas de BTS han sido traducidas al español. | The lyrics of "Boy With Luv" by BTS have been translated into Spanish.',
     tags: ['lyrics', 'BTS', 'KPOP'],
-    date: new Date(),
-    openGraph: {
-      title: 'hihi',
-      description: 'des',
-      url: 'dafas',
-      image: 'fsf',
-    },
-    twitter: {
-      title: 'hihi',
-      description: 'des',
-      url: 'dafas',
-      image: 'fsf',
-    },
+    date: new Date('2023-08-19T04:01:37.973Z'),
   },
 ];
 

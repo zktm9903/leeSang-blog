@@ -10,11 +10,10 @@ export interface openGraph {
 export interface store {
   id?: number;
   title: string;
+  category: string;
   img: string;
   description: string;
   tags: string[];
   writing: ReactNode;
   date: Date;
-  openGraph: openGraph;
-  twitter: openGraph;
 }
