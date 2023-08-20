@@ -3,13 +3,28 @@ import TagLinks from './components/TagLinks';
 import PageController from './components/PageControler';
 import { writingArr } from './writing-store/store';
 import ArticlePreview from './components/ArticlePreview';
-import { BLOG_TITLE } from './constant/info';
+import { BLOG_TITLE, URL } from './constant/info';
 
 export const metadata: Metadata = {
   title: BLOG_TITLE,
   description: 'Nice to meet you. I am a Korean who writes anything.',
   icons: {
     icon: '/angCat.png',
+  },
+  openGraph: {
+    title: BLOG_TITLE,
+    description: 'Nice to meet you. I am a Korean who writes anything.',
+    url: URL,
+    siteName: BLOG_TITLE,
+    images: [
+      {
+        url: '/angCat.png',
+        width: 800,
+        height: 800,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
 };
 
