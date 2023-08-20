@@ -21,7 +21,9 @@ export default function TagLinks({
     <div className="flex space-x-2 text-sm">
       {toTagSet(writingArr).map((el: string) => (
         <Link
-          href={`${path}?tag=${el}${param ? `&${param}` : ''}`}
+          href={`${path}?tag=${encodeURIComponent(el)}${
+            param ? `&${param}` : ''
+          }`}
           key={el}
           className={`${pick !== el && 'opacity-50'}`}>
           {el}

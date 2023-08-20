@@ -1,4 +1,5 @@
-export const Boy_With_Luv = `
+import Markdown from 'markdown-to-jsx';
+const lyrics = `
 [korean]
 
 모든 게 궁금해
@@ -197,3 +198,40 @@ Que un momento,
 Que un momento de amor,
 El amor no es nada más fuerte
 Que un chico con amor.`.replaceAll('\n', '<br/>');
+
+const Boy_With_Luv = {
+  title:
+    '작은 것들을 위한 시 (Boy With Luv) BTS lyrics/letra Traducción al español',
+  category: 'music',
+  img: 'https://upload.wikimedia.org/wikipedia/ko/thumb/e/ee/%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8_-_MAP_OF_THE_SOUL_-_PERSONA.png/220px-%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8_-_MAP_OF_THE_SOUL_-_PERSONA.png',
+  writing: (
+    <>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/ko/thumb/e/ee/%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8_-_MAP_OF_THE_SOUL_-_PERSONA.png/220px-%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8_-_MAP_OF_THE_SOUL_-_PERSONA.png"
+        className="mt-4"
+      />
+      <Markdown>{lyrics}</Markdown>
+      <iframe
+        className="mt-4 w-full"
+        height="315"
+        src="https://www.youtube.com/embed/XsX3ATc3FbA"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen></iframe>
+    </>
+  ),
+  description:
+    'Las letras de "Boy With Luv" para las canciones pequeñas de BTS han sido traducidas al español. | The lyrics of "Boy With Luv" by BTS have been translated into Spanish.',
+  tags: [
+    'Lyrics',
+    'BTS',
+    'KPOP',
+    'español',
+    'Spanish',
+    'Korean',
+    'translation',
+  ],
+  date: new Date('2023-08-19T04:01:37.973Z'),
+};
+
+export default Boy_With_Luv;
